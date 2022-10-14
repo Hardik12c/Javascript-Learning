@@ -1,0 +1,11 @@
+let firstName="Hardik";
+let c;
+console.log(c);
+let a=5;
+let z=3;
+console.log(a+z);
+a=1;
+console.log(a+z);
+let num1=prompt("enter the first number");
+let num2=prompt("enter the second number");
+alert("The multiplication of these numbers are "+(num1*num2));

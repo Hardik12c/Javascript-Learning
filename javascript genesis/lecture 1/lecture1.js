@@ -1,0 +1,11 @@
+console.log(5+6);
+console.log(6+'7');
+console.log(8-'7');
+console.log(10%5);
+console.log(11%5);
+console.log(true+false);
+console.log(false+true);
+console.log(true+true);
+console.log(false+false);
+console.log('it\'s my turn');
+console.log("I"+"like"+"you");
