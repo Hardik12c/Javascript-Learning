@@ -27,10 +27,15 @@ https://caniuse.com/
 */
 let heading1=document.querySelector("h2");
 let inputele=document.querySelector("input")
-console.log(heading1.getAttribute("id"));
+// console.log(heading1.getAttribute("id"));
 // let li=document.querySelectorAll(".element")[1].setAttribute('class','no-check');
-heading1.style.backgroundColor="red";
-console.log(inputele);
-inputele.className="hello";
-document.querySelector("li").classList.add("element");
-document.querySelector("li").classList.remove("element");
+// heading1.style.backgroundColor="red";
+// console.log(inputele);
+// inputele.className="hello";
+// document.querySelector("li").classList.add("element");
+// document.querySelector("li").classList.remove("element");
+
+// Get the last Element
+let lastelement=document.querySelector('li:last-child');
+lastelement.classList.add('listClass');
+console.log(lastelement);

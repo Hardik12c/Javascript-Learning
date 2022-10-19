@@ -126,3 +126,7 @@
   .addBtn:hover {
     background-color: #bbb;
   }
+
+  .listClass{
+    color: red;
+  }
