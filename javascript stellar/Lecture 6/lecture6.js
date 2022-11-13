@@ -22,14 +22,16 @@ const func=async()=>{
 func();
 //2 Update the async function from the lecture to not have .then methods inside
 const jsonList = [
-    'https://jsonplaceholder.typicode.com/userss',
+    'https://jsonplaceholder.typicode.com/users',
     'https://jsonplaceholder.typicode.com/posts',
     'https://jsonplaceholder.typicode.com/albums'
 ];
 const getData = async function(){
     try{
-        const [users, posts, albums] = await Promise.all(jsonList.map(url=>{
-            return fetch(url).then(response => response.json())
+        const [users, posts, albums] = await Promise.all(jsonList.map(async url=>{
+            const response=await fetch(url);
+            const data=await(response.json());
+            return data;
         }));
     
         console.log('users ', users);
